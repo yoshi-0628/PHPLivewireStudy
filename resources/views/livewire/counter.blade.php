@@ -7,7 +7,7 @@
     <h2>ユーザ一覧</h2>
     <ul>
         @foreach($users as $user)
-        <li>{{ $user->name }} <button wire:click="delUser({{ $user->id }})">削除</button>
-            @endforeach
+        <li>{{ $user->name }} <button wire:click="delUser({{ $user->id }})">削除</button></li>
+        @endforeach
     </ul>
 </div>
